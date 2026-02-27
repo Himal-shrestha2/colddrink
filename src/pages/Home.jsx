@@ -15,7 +15,7 @@ export default function Home({ cart, handleAdd }) {
     muted
     className="absolute w-full h-full object-cover"
   >
-    <source src="/videos/" type="video/mp4" />
+    <source src="/videos/hero.mp4" type="video/mp4" />
   </video>
 
   {/* Overlay */}
