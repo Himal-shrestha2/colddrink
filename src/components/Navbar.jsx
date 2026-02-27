@@ -2,7 +2,7 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
 
-export default function Navbar({ cart }) {
+export default function Navbar({ cart = [], darkMode, setDarkMode }) {
 
   const totalItems = cart.reduce(
     (total, item) => total + item.quantity,
@@ -12,7 +12,7 @@ export default function Navbar({ cart }) {
   return (
     <nav className="bg-white shadow-md">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
-        
+
         <h1 className="text-xl font-bold">Cold Drinks</h1>
 
         <div className="flex items-center gap-6">
@@ -26,7 +26,6 @@ export default function Navbar({ cart }) {
           >
             Home
           </NavLink>
-
           <NavLink
             to="/cart"
             className={({ isActive }) =>
@@ -38,6 +37,12 @@ export default function Navbar({ cart }) {
             <FaShoppingCart />
             Cart ({totalItems})
           </NavLink>
+          <button
+            onClick={() => setDarkMode(!darkMode)}
+            className="bg-gray-200 px-3 py-1 rounded"
+          >
+            {darkMode ? "Light" : "Dark"}
+          </button>
         </div>
       </div>
     </nav>

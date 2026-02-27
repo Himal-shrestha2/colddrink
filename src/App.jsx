@@ -8,6 +8,7 @@ function App() {
 
   const [cart, setCart] = useState([]);
   const [showToast, setShowToast] = useState(false);
+  const [darkMode, setDarkMode] = useState(false);
 // adding items to the cart
   const addToCart = (product) => {
     setCart(prevCart => {
@@ -56,8 +57,13 @@ const decreaseQuantity = (id) => {
   };
 
   return (
-    <>
-      <Navbar cart={cart} />
+    <div className={darkMode ? "dark bg-gray-900 text-white min-h-screen" : "min-h-screen"}> 
+    
+      <Navbar 
+      cart={cart}
+      darkMode={darkMode}
+      setDarkMode={setDarkMode}
+       />
 
       <Routes>
         <Route
@@ -86,7 +92,9 @@ const decreaseQuantity = (id) => {
     Item added to cart ✓
   </div>
 )}
-    </>
+</div>
+    
+
   );
 }
 
