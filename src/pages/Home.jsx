@@ -4,7 +4,7 @@ import FlavorCard from "../components/FlavorCard";
 
 export default function Home({ cart, handleAdd }) {
   return (
-    <main className="container mx-auto px-4 py-8">
+    <main className="container mx-auto px-4 py-8 animate-fadeIn">
 
       {/* Hero Section */}
 <section className="relative h-[400px] md:h-[600px] mb-12 overflow-hidden rounded-lg">
