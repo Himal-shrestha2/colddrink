@@ -59,7 +59,15 @@ export default function Home({ cart, handleAdd }) {
     Perfect for every season and every mood.
     Experience natural taste with modern packaging.
   </p>
+  
 </section>
+<footer className="mt-16 bg-gray-800 text-white py-6 text-center">
+  <p>© 2026 Cold Drinks Store</p>
+  <p className="text-sm text-gray-400 mt-2">
+    Made with React & Tailwind CSS
+  </p>
+</footer>
     </main>
+    
   );
 }
