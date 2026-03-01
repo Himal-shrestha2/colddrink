@@ -8,7 +8,7 @@ function App() {
 
   const [cart, setCart] = useState([]);
   const [showToast, setShowToast] = useState(false);
-  const [darkMode, setDarkMode] = useState(false);
+  // const [darkMode, setDarkMode] = useState(false);
 // adding items to the cart
   const addToCart = (product) => {
     setCart(prevCart => {
@@ -57,46 +57,42 @@ const decreaseQuantity = (id) => {
     );
   };
 
-  return (
-    <div className={darkMode ? "dark bg-gray-900 text-white min-h-screen" : "min-h-screen"}> 
-    
-      <Navbar 
-      cart={cart}
-      darkMode={darkMode}
-      setDarkMode={setDarkMode}
-       />
+return (
+  <div className="min-h-screen">
 
-      <Routes>
-        <Route
-          path="/"
-          element={
-            <Home
-              cart={cart}
-              handleAdd={addToCart}
-            />
-          }
-        />
-        <Route
-          path="/cart"
-          element={
-            <Cart
-              cart={cart}
-              removeFromCart={removeFromCart}
-              increaseQuantity={increaseQuantity}
-              decreaseQuantity={decreaseQuantity}
-            />
-          }
-        />
-      </Routes>
-      {showToast && (
-  <div className="fixed top-5 right-5 bg-green-500 text-white px-6 py-3 rounded shadow-lg transition">
-    Item added to cart ✓
+    <Navbar cart={cart} />
+
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <Home
+            cart={cart}
+            handleAdd={addToCart}
+          />
+        }
+      />
+      <Route
+        path="/cart"
+        element={
+          <Cart
+            cart={cart}
+            removeFromCart={removeFromCart}
+            increaseQuantity={increaseQuantity}
+            decreaseQuantity={decreaseQuantity}
+          />
+        }
+      />
+    </Routes>
+
+    {showToast && (
+      <div className="fixed top-5 right-5 bg-green-500 text-white px-6 py-3 rounded shadow-lg transition">
+        Item added to cart ✓
+      </div>
+    )}
+
   </div>
-)}
-</div>
-    
-
-  );
+);
 }
 
 export default App;

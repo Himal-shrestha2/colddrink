@@ -24,14 +24,14 @@ export default function Home({ cart, handleAdd }) {
       
       </section>
       {/* Content */}
-        <div className="relative z-10 opacity-90 flex flex-col justify-center items-center h-full text-white text-center px-4">
+        <div className="relative z-10 opacity-90 flex flex-col justify-center items-center h-full text-black text-center px-4">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
             Refresh Your Mood
           </h1>
           <p className="text-lg md:text-xl mb-6 max-w-2xl">
             Discover our premium cold drink flavours crafted to energize your day.
           </p>
-          <button className="bg-white text-black px-6 py-2 rounded-md font-semibold hover:bg-gray-200 transition">
+          <button className="bg-orange-500 text-white px-6 py-2 rounded-md font-semibold hover:bg-orange-600 transition">
             Explore Flavours
           </button>
         </div>
