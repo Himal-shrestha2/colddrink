@@ -21,8 +21,9 @@ export default function Home({ cart, handleAdd }) {
 
         {/* Overlay */}
         {/* <div className="absolute inset-0 bg-black bg-opacity-50"></div> */}
-
-        {/* Content */}
+      
+      </section>
+      {/* Content */}
         <div className="relative z-10 opacity-90 flex flex-col justify-center items-center h-full text-white text-center px-4">
           <h1 className="text-4xl md:text-6xl font-extrabold mb-4">
             Refresh Your Mood
@@ -34,8 +35,6 @@ export default function Home({ cart, handleAdd }) {
             Explore Flavours
           </button>
         </div>
-
-      </section>
 
       {/* REST OF PAGE INSIDE CONTAINER */}
       <main className="container mx-auto px-4 py-16 animate-fadeIn">

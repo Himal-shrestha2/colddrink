@@ -37,6 +37,7 @@ export default function Navbar({ cart = [], darkMode, setDarkMode }) {
             <FaShoppingCart />
             Cart ({totalItems})
           </NavLink>
+          
           <button
             onClick={() => setDarkMode(!darkMode)}
             className="bg-gray-200 px-3 py-1 rounded"
