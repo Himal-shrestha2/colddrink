@@ -14,11 +14,11 @@ export default function Cart({
     <main className="container mx-auto px-4 py-8">
 
       <h2 className="text-3xl font-bold mb-6">Your Cart</h2>
-
       {cart.length === 0 ? (
         <p className="text-gray-600">Your cart is empty.</p>
       ) : (
         <>
+        
           <div className="space-y-4">
             {cart.map(item => (
               <div
@@ -41,7 +41,7 @@ export default function Cart({
                   >
                     -
                   </button>
-
+                  
                   <span className="font-semibold">
                     {item.quantity}
                   </span>

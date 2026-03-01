@@ -39,7 +39,15 @@ export default function Home({ cart, handleAdd }) {
 
       {/* REST OF PAGE INSIDE CONTAINER */}
       <main className="container mx-auto px-4 py-16 animate-fadeIn">
-
+{/* Special Offer Banner */}
+<section className="bg-gradient-to-r from-orange-500 to-pink-500 text-white py-6 text-center">
+  <h2 className="text-2xl font-bold">
+    Summer Special Offer 
+  </h2>
+  <p className="mt-2">
+    Buy 2 Drinks & Get 1 Free Limited Time Only!
+  </p>
+</section>
         {/* Flavours */}
         <section>
           <h2 className="text-2xl font-bold mb-6">Our Flavours</h2>
@@ -55,6 +63,121 @@ export default function Home({ cart, handleAdd }) {
             ))}
           </div>
         </section>
+
+{/* Ingredients Section */}
+<section className="py-20 bg-white">
+  <div className="container mx-auto px-4 text-center">
+    <h2 className="text-3xl font-bold mb-10">
+      🌿 Fresh & Natural Ingredients
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      
+      <div>
+        <h3 className="text-xl font-semibold mb-2">🍋 Fresh Citrus</h3>
+        <p className="text-gray-600">Handpicked natural fruits.</p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold mb-2">🌱 Natural Sweeteners</h3>
+        <p className="text-gray-600">No artificial sugar added.</p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold mb-2">❄️ Ice-Crafted</h3>
+        <p className="text-gray-600">Perfectly chilled for refreshment.</p>
+      </div>
+
+      <div>
+        <h3 className="text-xl font-semibold mb-2">🚫 No Preservatives</h3>
+        <p className="text-gray-600">100% clean & safe ingredients.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+        {/* Featured Section */}
+<section className="py-16 bg-gray-50">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center mb-10">
+      🌟 Best Sellers
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+      
+      <div className="bg-white shadow-lg rounded-xl p-6 text-center hover:shadow-2xl transition">
+        <h3 className="text-xl font-semibold mb-2">Mango Blast</h3>
+        <p className="text-gray-600 mb-4">Our most loved tropical flavor.</p>
+        <span className="text-orange-500 font-bold">Best Seller</span>
+      </div>
+
+      <div className="bg-white shadow-lg rounded-xl p-6 text-center hover:shadow-2xl transition">
+        <h3 className="text-xl font-semibold mb-2">Lemon Spark</h3>
+        <p className="text-gray-600 mb-4">Refreshing citrus energy boost.</p>
+        <span className="text-yellow-500 font-bold">Trending</span>
+      </div>
+
+      <div className="bg-white shadow-lg rounded-xl p-6 text-center hover:shadow-2xl transition">
+        <h3 className="text-xl font-semibold mb-2">Berry Chill</h3>
+        <p className="text-gray-600 mb-4">Sweet & smooth berry blend.</p>
+        <span className="text-purple-500 font-bold">Top Rated</span>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{/* Our Story */}
+<section className="py-16 bg-gray-50">
+  <div className="container mx-auto px-4 text-center max-w-3xl">
+    <h2 className="text-3xl font-bold mb-6">
+      🌍 Our Story
+    </h2>
+    <p className="text-gray-600 leading-relaxed">
+      Founded in 2020, Cold Drinks Store began with one mission —
+      to create refreshing beverages made from natural ingredients.
+      What started as a small idea has grown into a brand loved by
+      thousands of customers.
+      Every bottle we craft carries passion, freshness, and quality.
+    </p>
+  </div>
+</section>
+
+{/* Reviews Section */}
+<section className="py-16 bg-gray-100">
+  <div className="container mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center mb-10">
+      ⭐ What Our Customers Say
+    </h2>
+
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+      <div className="bg-white p-6 rounded-xl shadow-md">
+        <p className="text-gray-600 mb-4">
+          “Absolutely refreshing and delicious!”
+        </p>
+        <h4 className="font-semibold">— Ayan  ⭐⭐⭐⭐⭐</h4>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl shadow-md">
+        <p className="text-gray-600 mb-4">
+          “Best summer drink I’ve tried this year.”
+        </p>
+        <h4 className="font-semibold">— Rohan ⭐⭐⭐⭐⭐</h4>
+      </div>
+
+      <div className="bg-white p-6 rounded-xl shadow-md">
+        <p className="text-gray-600 mb-4">
+          “Great quality and amazing flavors!”
+        </p>
+        <h4 className="font-semibold">— Sara ⭐⭐⭐⭐⭐</h4>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 
         {/* About Section */}
         <section className="mt-16 text-center max-w-3xl mx-auto">

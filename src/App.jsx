@@ -24,6 +24,7 @@ function App() {
 
       return [...prevCart, { ...product, quantity: 1 }];
     });
+    // showing toast notification when an item is added to the cart
     setShowToast(true);
     setTimeout(() => setShowToast(false), 2000);
   };
@@ -37,7 +38,7 @@ const increaseQuantity = (id) => {
     )
   );
 };
-
+// decreasing the quantity of items in the cart and removing them if quantity is 0  
 const decreaseQuantity = (id) => {
   setCart(prevCart =>
     prevCart
