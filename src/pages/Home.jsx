@@ -6,7 +6,7 @@ export default function Home({ cart, handleAdd }) {
   return (
     <>
 
-      {/* FULL WIDTH HERO */}
+      
       <section className="relative w-full h-screen overflow-hidden">
 
         <video
@@ -67,28 +67,28 @@ export default function Home({ cart, handleAdd }) {
 <section className="py-20 bg-white">
   <div className="container mx-auto px-4 text-center">
     <h2 className="text-3xl font-bold mb-10">
-      🌿 Fresh & Natural Ingredients
+       Fresh & Natural Ingredients
     </h2>
 
     <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
       
       <div>
-        <h3 className="text-xl font-semibold mb-2">🍋 Fresh Citrus</h3>
+        <h3 className="text-xl font-semibold mb-2"> Fresh Citrus</h3>
         <p className="text-gray-600">Handpicked natural fruits.</p>
       </div>
 
       <div>
-        <h3 className="text-xl font-semibold mb-2">🌱 Natural Sweeteners</h3>
+        <h3 className="text-xl font-semibold mb-2"> Natural Sweeteners</h3>
         <p className="text-gray-600">No artificial sugar added.</p>
       </div>
 
       <div>
-        <h3 className="text-xl font-semibold mb-2">❄️ Ice-Crafted</h3>
+        <h3 className="text-xl font-semibold mb-2">Ice-Crafted</h3>
         <p className="text-gray-600">Perfectly chilled for refreshment.</p>
       </div>
 
       <div>
-        <h3 className="text-xl font-semibold mb-2">🚫 No Preservatives</h3>
+        <h3 className="text-xl font-semibold mb-2"> No Preservatives</h3>
         <p className="text-gray-600">100% clean & safe ingredients.</p>
       </div>
 
@@ -100,7 +100,7 @@ export default function Home({ cart, handleAdd }) {
 <section className="py-16 bg-gray-50">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold text-center mb-10">
-      🌟 Best Sellers
+      Best Sellers
     </h2>
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -131,7 +131,7 @@ export default function Home({ cart, handleAdd }) {
 <section className="py-16 bg-gray-50">
   <div className="container mx-auto px-4 text-center max-w-3xl">
     <h2 className="text-3xl font-bold mb-6">
-      🌍 Our Story
+     Our Story
     </h2>
     <p className="text-gray-600 leading-relaxed">
       Founded in 2020, Cold Drinks Store began with one mission —
@@ -147,7 +147,7 @@ export default function Home({ cart, handleAdd }) {
 <section className="py-16 bg-gray-100">
   <div className="container mx-auto px-4">
     <h2 className="text-3xl font-bold text-center mb-10">
-      ⭐ What Our Customers Say
+      What Our Customers Say
     </h2>
 
     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

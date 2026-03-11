@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { FaShoppingCart } from "react-icons/fa";
-
+// import { FaShoppingBag } from "react-icons/fa";
 export default function Navbar({ cart = [] }) {
 
   const totalItems = cart.reduce(
@@ -35,6 +35,7 @@ export default function Navbar({ cart = [] }) {
                 : "text-gray-700 flex items-center gap-2"
             }
           >
+            {/* <FaShoppingBag /> */}
             <FaShoppingCart />
             Cart ({totalItems})
           </NavLink>
